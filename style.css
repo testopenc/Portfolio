@@ -1,0 +1,874 @@
+@font-face {
+  font-family: "Epitaph-Regular-Regular";
+  src: url("/assets/typo/Epitaph-Regular-Regular.woff2");
+}
+@font-face {
+  font-family: "COOLVETI";
+  src: url("/assets/typo/COOLVETI.woff2");
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "COOLVETI", Helvetica;
+  background-image: url(/assets/images/portfoliobackground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+}
+
+body h1,
+h2 {
+  font-family: "Epitaph-Regular-Regular", sans-serif;
+}
+
+p {
+  text-align: center;
+}
+
+/* HEADER */
+
+nav {
+  display: flex;
+  align-items: center;
+}
+.flexlogo {
+  flex: 50%;
+}
+.flexmenu {
+  flex: 50%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1.875em;
+}
+
+#logo {
+  width: 3.4375em;
+  height: auto;
+  margin: 1.875em;;
+}
+
+#burger {
+  width: 2.1875em;
+  height: auto;
+}
+
+/* BURGER MENU */
+.overlay {
+  position: fixed;
+  background-image: url(/assets/images/Menuburger_grand.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+
+.popupp {
+  transition: all 0.4s ease-in-out;
+}
+.crossbox {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cross {
+  display: flex;
+  justify-content: flex-end;
+  width: 2.1875em;
+  height: auto;
+  font-size: 2em;
+  border-radius: 50px;
+  border-bottom: none;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+.anchorsmenu a {
+  text-decoration: none;
+  color: black;
+}
+
+.anchorsmenu {
+  text-align: center;
+  font-size: 1.6em;
+}
+
+.anchorsmenu div {
+  margin: 1em;
+}
+
+.iconcontact {
+  display: flex;
+  justify-content: center;
+  padding: 1.6875em;
+}
+
+.iconcontact img {
+  height: 2.25em;
+}
+
+/* 1ST SECTION */
+h1 {
+  margin-top: 2.5em;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.contactbutton a {
+  text-decoration: none;
+}
+
+.contactbutton {
+  margin-top: 4em;
+  margin-bottom: 9em;
+  display: flex;
+  justify-content: center;
+}
+
+button:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
+  background: #bcb0d5;
+  border: 2px solid #bcb0d5;
+  transform-origin: center;
+}
+
+button {
+  border: 2px solid;
+  border-radius: 50px;
+  padding: 0.6875em;
+  background-color: #ffff9f;
+  margin-bottom: 1.875em;
+  font-size: 1.3em;
+  font-family: "COOLVETI";
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* SKILLS SECTION */
+
+section {
+  display: inline-flex;
+  background-color: white;
+}
+section h1 {
+  font-size: 1.5em;
+  margin: 10px 20px 20px 20px;
+}
+
+section p {
+  font-size: 1em;
+  margin: 1.25em;
+}
+
+.skillsection h1 {
+  font-size: 1.8em;
+}
+
+.skillsection p {
+  margin: 20px 20px 30px 20px;
+}
+
+.skillsection img {
+  transition: 0.3s ease-in-out;
+}
+
+.skillsection img:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
+}
+#painticon:hover,
+#puzzleicon:hover {
+  transform: rotate(15deg);
+}
+
+.skillsection {
+  flex: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: white; */
+}
+
+.icon {
+  width: 9em;
+  margin-top: -5em;
+  padding:  1.6875em;
+  border-radius: 50%;
+  background-color: white;
+}
+
+#puzzleicon {
+  width: 5.625em;
+  height: 5.040625em
+}
+#brainicon {
+  width: 5.625em;
+  height: 5.040625em
+}
+
+/* SECTION PROJET */
+#projet {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffff9f;
+}
+
+#projet img {
+  transition: 0.3s ease-in-out;
+}
+
+#projet img:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
+}
+
+.blockprojet {
+  display: flex;
+  margin-top: 2em;
+  align-items: center;
+}
+
+.blockprojet2 {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 3em;
+  align-items: center;
+}
+
+.blockprojet3 {
+  display: flex;
+  margin-top: 2em;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+.texte {
+  flex: 50%;
+}
+
+.image {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+}
+#bambette {
+  height: 18.125em;
+}
+
+#reservia {
+  height: 18.125em;
+}
+#portfolio {
+  height: 18.125em;
+}
+
+/* SECTION ABOUT */
+
+#about {
+  display: flex;
+  height: 35em;
+  background: white;
+}
+
+.illustration {
+  justify-content: center;
+  height: 38em;
+  flex: 50%;
+  -webkit-mask-image: url(data:image/svg+xml;base64,PCEtLT94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/LS0+CiAgICAgICAgICAgICAgPHN2ZyBpZD0ic3ctanMtYmxvYi1zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSI+CiAgICAgICAgICAgICAgICAgICAgPGRlZnM+IAogICAgICAgICAgICAgICAgICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9InN3LWdyYWRpZW50IiB4MT0iMCIgeDI9IjEiIHkxPSIxIiB5Mj0iMCI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3RvcCBpZD0ic3RvcDEiIHN0b3AtY29sb3I9InJnYmEoMjA5LjkxNiwgMjE4LjEyMiwgMjM5LjUxMywgMSkiIG9mZnNldD0iMCUiPjwvc3RvcD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzdG9wIGlkPSJzdG9wMiIgc3RvcC1jb2xvcj0icmdiYSgxOTAuMjc5LCA5NC44NTEsIDE5Mi42MDIsIDEpIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgICAgICAgICAgICAgICAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICAgICAgICAgICAgICA8L2RlZnM+CiAgICAgICAgICAgICAgICA8cGF0aCBmaWxsPSJ1cmwoI3N3LWdyYWRpZW50KSIgZD0iTTE1LjgsLTIzLjhDMjAuNywtMTguMiwyNSwtMTMuOSwyNSwtOS4yQzI1LC00LjYsMjAuNywwLjQsMTkuNCw3QzE4LjIsMTMuNiwyMCwyMS44LDE3LjMsMjYuOEMxNC42LDMxLjgsNy4zLDMzLjYsMC4zLDMzLjJDLTYuNywzMi44LC0xMy40LDMwLjIsLTIwLjQsMjYuNkMtMjcuNCwyMi45LC0zNC43LDE4LjMsLTM0LjYsMTIuN0MtMzQuNiw3LC0yNywwLjMsLTIzLjcsLTdDLTIwLjMsLTE0LjIsLTIxLC0yMi4xLC0xNy44LC0yOC4zQy0xNC41LC0zNC40LC03LjMsLTM4LjcsLTAuOSwtMzcuNUM1LjUsLTM2LjIsMTAuOSwtMjkuNCwxNS44LC0yMy44WiIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTAgNTApIiBzdHJva2Utd2lkdGg9IjAiIHN0eWxlPSJ0cmFuc2l0aW9uOiBhbGwgMC4zcyBlYXNlIDBzOyIgc3Ryb2tlPSJ1cmwoI3N3LWdyYWRpZW50KSI+PC9wYXRoPgogICAgICAgICAgICAgIDwvc3ZnPg==);
+  -webkit-mask-repeat: no-repeat;
+}
+
+#portrait {
+  border: 2px solid white;
+  height: 40em;
+  
+}
+
+
+.presentation {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+/* Section ARTPLACE */
+
+#titleArtplace {
+  background: #ffff9f;
+  margin-top: unset;
+  padding: 1.5em;
+}
+#artplace img:hover{
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
+}
+#artplace img {
+  height: 18.75em;
+  transition: 0.3s ease-in-out;
+}
+
+
+#artplace {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffff9f;
+  padding-bottom: 6em;
+}
+.project {
+  flex: 30%;
+  display: flex;
+  justify-content: center;
+  padding: 1.875em;
+}
+
+/* WHITE TRANSITION */
+
+.whitetransition {
+  height: 9em;
+  background-color: white;
+}
+
+/* LET'S WORK TOGETHER */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background: url(/assets/images/contact_grand.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.formTitle {
+  font-size: 2.2em;
+  margin-top: unset;
+  padding: 2em 1em 1em 1em;
+}
+
+#fname {
+  margin-right: 2em;
+}
+
+#mail {
+  margin-top: 2em;
+  width: 30em;
+}
+
+#fname,
+#lname {
+  width: 10em;
+}
+
+#fname,
+#lname,
+#mail {
+  padding: 1em;
+  border-style: none;
+  border-radius: 30px;
+  font-size: 1em;
+  text-align: center;
+  outline: medium none;
+  font-family: "COOLVETI";
+}
+
+#fname::placeholder,
+#lname::placeholder,
+#mail::placeholder,
+#message::placeholder {
+  color: black;
+}
+
+.form textarea {
+  width: 40em;
+  height: 13em;
+  min-width: 40em;
+  max-width: 40em;
+  min-height: 5em;
+  margin-top: 2em;
+  padding: 1em;
+  border-radius: 100px;
+  border-style: none;
+  outline: none;
+  font-size: 1em;
+  text-align: center;
+  font-family: "COOLVETI";
+}
+
+#sure {
+  width: 7em;
+  margin-top: 1em;
+  margin-bottom: 5em;
+  padding: 0.625em;
+  font-size: 1.3em;
+  border-radius: 50px;
+  border: 2px solid black;
+  background: #ffff9f;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  font-family: "COOLVETI";
+}
+
+#sure:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
+  background: #bcb0d5;
+  border: 2px solid #bcb0d5;
+  transform-origin: center;
+}
+
+/* FOOTER */
+.footerlogo {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  align-items: center;
+}
+footer {
+  background-color: white;
+}
+
+#footerlogoimg {
+  width: 4.0625em;
+  height: auto;
+  margin: 30px 30px 50px 30px;
+}
+
+.footerlogo ul {
+  list-style: none;
+  font-size: 2em;
+  margin-top: 1em;
+  font-family: "Epitaph-Regular-Regular";
+}
+.footerlogo span {
+  margin: 1em;
+}
+
+#marginleft {
+  margin-left: 1.8em;
+}
+
+.footerlogo a {
+  text-decoration: none;
+  color: black;
+}
+
+/* MEDIAQUERIES */
+
+@media screen and (min-width: 1440px){
+  #bodybackground {
+    background-position: unset;
+    background-size: cover;
+  }
+  h1 {
+    font-size: 3.5em;
+    margin-top: 4.5em;
+  }
+  .contactbutton {
+    margin-top: 15em;
+    margin-bottom: 16em;
+  }
+  .skillsection h1 {
+    font-size: 2em;
+  }
+  section p {
+    font-size: 1.5em;
+  }
+  section h1 {
+    font-size: 2em;
+  }
+  #about {
+    height: 65em;
+}
+.illustration {
+  height: 74em;
+  }
+  #portrait {
+    height: auto;
+    width: 100%;
+  }
+  #titleArtplace{
+    font-size: 2em;
+  }
+  .anchorsmenu {
+    font-size: 2.5em;
+    margin-top: 3em;
+  }
+  .iconcontact {
+    height: 4.25em;
+  }
+  #bambette{
+    height: 32.125em;
+}
+  #reservia{
+    height: 32.125em;
+  }
+  #portfolio {
+    height: 32.125em;
+  }
+  
+  #fname,
+  #lname,
+  #mail {
+    border-radius: 90px;
+    font-size: 1.3em;
+  }
+  .form textarea {
+    width: 60em;
+    height: 15em;
+    min-width: 60em;
+    max-width: 60em;
+    min-height: 15em;
+    font-size: 1.3em;
+    border-radius: 150px;
+  }
+}
+
+
+@media screen and (max-width: 1440px) {
+  #bodybackground {    
+    background-size: 93.75em;
+    background-position: unset;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  .skillsection h1 {
+    font-size: 1.5em;
+  }
+  section p {
+    font-size: 1em;
+  }
+  section h1 {
+    font-size: 1.5em;
+  }
+  #titleArtplace{
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 960px) {
+ #portrait {
+   height: 35em;
+ }
+}
+
+@media screen and (max-width: 870px) {
+  #portrait {
+    height: 30em;
+    margin-top: 2em;
+  }
+ }
+
+@media screen and (max-width: 810px) {
+  .skillsection h1 {
+    font-size: 1.5em;
+  }
+
+@media screen and (max-width: 768px) {
+  
+  body {background-position: unset;
+  }
+
+  .skillsection h1 {
+    font-size: 1.3em;
+  }
+
+  #projet img {
+    height: 9.375em;
+  }
+
+  #artplace img {
+    height: 14.0625em;
+  }
+
+.illustration {
+  display: flex;
+  flex: unset;
+  height: unset;
+}
+
+.presentation {
+  flex: unset;
+}
+
+  #portrait {
+    height: 45em;
+  }
+  #about {
+    height: auto;
+    flex-direction: column;
+  }
+  #mail {
+    width: unset;
+  }
+  .presentation p {
+    margin: 20px 20px 85px 20px;
+  }
+  .form textarea {
+    width: 25em;
+    height: 7em;
+    min-width: 25em;
+    max-width: 25em;
+    min-height: 5em;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #portrait {
+    height: 42em;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .footerlogo ul {
+    font-size: 1.5em;
+  }
+    #portrait {
+      height: 39em;
+  }
+}
+
+@media screen and (max-width: 618px) {
+  h1 {
+    font-size: 2em;
+    margin-top: 3.5em;
+  }
+  .skillsection h1 {
+    font-size: 1em;
+  }
+  section p {
+    font-size: 0.8em;
+  }
+  section h1 {
+    font-size: 1.3em;
+  }
+  .contactbutton {
+    margin-bottom: 11em;
+    margin-top: 9em;
+  }
+  #portrait {
+    height: 32em;
+ }
+}
+
+@media screen and (max-width: 512px) {
+  .overlay {
+    position: fixed;
+    background-image: url(/assets/images/Menuburger_mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+  }
+  .anchorsmenu {
+    font-size: 1.3em;
+    margin-top: 3em;
+  }
+
+  body h1 {
+    font-size: 1.5em;
+    margin: 1.25em;
+    margin-top: 2em;
+  }
+
+  .contactbutton {
+    margin-bottom: 5em;
+  }
+
+  .icon {
+    border-radius: unset;
+    margin-top: unset;
+    background-color: unset;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skillsection h1 {
+    font-size: 1.3em;
+  }
+
+  section h1 {
+    font-size: 1.3em;
+  }
+
+  #titleArtplace {
+    font-size: 1.3em;
+    margin: unset;
+  }
+
+  #projet img {
+    padding: 1em;
+  }
+
+  .blockprojet,
+  .blockprojet2,
+  .blockprojet3 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+
+  #bambette {
+    height: 12.5em;
+  }
+
+  #reservia {
+    height: 11.5625em;
+  }
+
+  #portfolio {
+    height: 11.5625em;
+  }
+
+  #portrait {
+    height: 30em;
+  }
+
+  #about {
+    height: auto;
+  }
+
+  .presentation p {
+    margin: 20px 20px 85px 20px;
+  }
+
+  #artplace {
+    display: flex;
+    flex-wrap: unset;
+    padding-bottom: 5em;
+  }
+
+  .project {
+    flex: 20%;
+    padding: 1.25em;
+  }
+
+
+  #artplace img {
+    height: 12.5em;
+  }
+  #bodybackground {
+    background-image: url(/assets/images/portfoliobackground.png);
+    background-size: 81.3125em;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: unset;
+  }
+
+  .formTitle {
+    font-size: 1.5em;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: center;
+  }
+
+  #fname {
+    margin-right: 1em;
+  }
+
+  #fname,
+  #lname {
+    width: 8em;
+  }
+
+  #fname,
+  #lname,
+  #mail {
+    font-size: unset;
+  }
+
+  #mail {
+    width: unset;
+  }
+
+  .form textarea {
+    width: 15em;
+    height: 7em;
+    min-width: 15em;
+    max-width: 15em;
+    min-height: 5em;
+  }
+  .footerlogo ul {
+    font-size: 1em;
+  }
+
+  .footerlogo span {
+    margin: 0.5em;
+  }
+  #marginleft {
+    margin-left: 1em;
+  }
+  .presentation h1 {
+    margin-top: unset;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  #portrait {
+    height: 27em;
+  }
+} 
+
+@media screen and (max-width: 420px) {
+  #portrait {
+    height: 25em;
+  }
+} 
+
+@media screen and (max-width: 390px) {
+  #portrait {
+    height: 23em;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  #portrait {
+    height: 20em;
+  }
+}
+
+@media screen and (max-width: 309px) {
+  .footerlogo ul {
+    font-size: 0.8em;
+  }
+  #portrait {
+    height: 17em;
+  }
+}
