@@ -51,7 +51,7 @@ nav {
   margin-right: 1.875em;
 }
 
-#logo {
+.logo {
   width: 3.4375em;
   height: auto;
   margin: 1.875em;;
@@ -323,8 +323,13 @@ section p {
 
 /* Section ARTPLACE */
 
+.colorbackground {
+  display: flex;
+  flex-direction: column;
+  background: #BCB0D5;
+}
+
 #titleArtplace {
-  background: #ffff9f;
   margin-top: unset;
   padding: 1.5em;
 }
@@ -337,11 +342,10 @@ section p {
   transition: 0.3s ease-in-out;
 }
 
-
 #artplace {
   display: flex;
   flex-wrap: wrap;
-  background-color: #ffff9f;
+  background-color: #BCB0D5;
   padding-bottom: 6em;
 }
 .project {
